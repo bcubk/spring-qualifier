@@ -69,13 +69,14 @@ public void testInterface() {
 
 ## Project Structure
 
-This project contains:
+This project contains following tests:
 
-- `src/main/java/com/example/qualifier/demo/DemoApplication.java` - Spring Boot application entry point
-- `src/test/java/com/example/qualifier/demo/` - Test cases demonstrating the issue:
-    - `SingleContextTest.java` - Shows correct qualifier behavior in a single context
-    - `ParentChildContextTest.java` - Demonstrates the issue in parent-child hierarchy
-    - `ParentChildContextSolutionTest.java` - Shows potential workarounds
+- [TestBeanQualifiers.java](src/test/java/com/bcubk/TestBeanQualifiers.java) - The usage of bean qualifiers in the current application context
+- [TestBeanQualifiersInSubContextCorrectFieldName.java](src/test/java/com/bcubk/TestBeanQualifiersInSubContextCorrectFieldName.java) - The usage of bean qualifiers in a sub application context with proper field name
+- [TestBeanQualifiersInSubContextWrongFieldName.java](src/test/java/com/bcubk/TestBeanQualifiersInSubContextWrongFieldName.java) - The usage of bean qualifiers in a sub application context with intentional wrong field name
+
+## Used versions
+- Spring Boot 3.4.4
 
 ## Requirements
 - Java 11 or higher
